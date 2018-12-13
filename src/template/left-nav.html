@@ -1,0 +1,10 @@
+{{each data as value i}}
+  <li>
+    <a href="javascript:;">{{value.serviceIndex}}<img src="img/right.png" alt="right"><i></i></a>
+    <ul class="workers">
+      {{each value.serviceType as item i}}
+      <li><a href="javascript:;">{{item}}</a></li>
+      {{/each}}
+    </ul>
+  </li>
+{{/each}}
